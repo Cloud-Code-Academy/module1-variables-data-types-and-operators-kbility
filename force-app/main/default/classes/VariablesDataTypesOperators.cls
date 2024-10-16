@@ -33,11 +33,9 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer addition(Integer a, Integer b) {  
         //return null; // Replace null with the variable you used to store the result
-
-        if(a == null || b == null){
+        if (a==null || b==null) {
             return null;
-        }
-        else{
+        } else {
             return a + b;
         }
     }
@@ -51,7 +49,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        //return null; // Replace null with the variable you used to store the result
+        if (a==null || b==null) {
+            return null;
+        } else {
+            return a - b;
+        }
     }
 
     /**
@@ -63,7 +66,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        //return null; // Replace null with the variable you used to store the result
+        if(a==null || b==null) {
+            return null;
+        } else {
+            return a * b;
+        }
     }
 
     /**
@@ -76,7 +84,16 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        //return null; // Replace null with the variable you used to store the result
+        if (a==null || b==null) {
+            return null;
+        } else {
+            if (b == 0) {
+                return 0;
+                } else {
+                return a / b;
+            }
+        }
     }
 
     /**
